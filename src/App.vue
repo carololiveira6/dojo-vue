@@ -1,4 +1,3 @@
-<script setup lang="ts"></script>
 
 <template>
   <header>
@@ -6,10 +5,16 @@
     <h3>Bem vindo ao Dojo de Vue</h3>
     <h1 style="text-align: left">Lista de tarefas</h1>
     <div class="wrapper"></div>
-  </header>
+    </header>
+    
+    <TodoListVue/>
+    <main></main>
+    </template>
+    
+<script setup lang="ts">
+import TodoListVue from "./components/TodoList.vue";
 
-  <main></main>
-</template>
+</script>
 
 <style scoped>
 header {
